@@ -9,7 +9,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+     
+      - name: Install Dependencies
+        run: sudo apt-get install -y python3.7
+        
       - name: Get Date
         id: get-date
         run: |
@@ -33,6 +36,7 @@ jobs:
         with:
           command: buildozer android debug
           buildozer_version: stable
+    
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
