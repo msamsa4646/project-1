@@ -10,14 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Python 3.7.6'ı Yükle
-        uses: actions/setup-python@v3
-        with:
-        python-version: 3.7.6
-
-      - name: Python Sürümünü Kontrol Et
-        run: python --version
-        
+         
       - name: Get Date
         id: get-date
         run: |
