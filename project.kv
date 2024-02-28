@@ -1,0 +1,16 @@
+# WhatsAppApp.kv
+
+<WhatsAppApp>:
+    orientation: 'vertical'
+    spacing: 10
+
+    Label:
+        text: "Bilgi:"
+
+    Button:
+        text: "Kapat"
+        on_press: root.kapat_fonksiyonu(self)
+
+    Button:
+        text: "Aç"
+        on_press: root.ac_fonksiyonu(self)
